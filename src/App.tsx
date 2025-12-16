@@ -59,7 +59,7 @@ function App() {
                 <Calendar className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-lg">Every Sunday</p>
-                  <p className="text-gray-300 text-base">January 11, 14, 18, 29</p>
+                  <p className="text-gray-300 text-base">January 4, 11, 18, 25</p>
                 </div>
               </div>
 
@@ -209,16 +209,16 @@ function App() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {/* Date 1 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">11</div>
+              <div className="text-7xl font-black text-navy mb-2">4</div>
               <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Sunday</div>
+              <div className="text-base text-gray-500 mt-2">Saturday</div>
             </div>
 
             {/* Date 2 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">14</div>
+              <div className="text-7xl font-black text-navy mb-2">11</div>
               <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Wednesday</div>
+              <div className="text-base text-gray-500 mt-2">Saturday</div>
             </div>
 
             {/* Date 3 */}
@@ -230,9 +230,9 @@ function App() {
 
             {/* Date 4 */}
             <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">29</div>
+              <div className="text-7xl font-black text-navy mb-2">25</div>
               <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Sunday</div>
+              <div className="text-base text-gray-500 mt-2">Saturday</div>
             </div>
           </div>
         </div>
