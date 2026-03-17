@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Calendar, Clock, MapPin, Target, Users, Lightbulb, Phone, Globe, MapPinIcon } from 'lucide-react';
+import { Calendar, MapPin, Target, Users, Lightbulb, Phone, Globe, MapPinIcon } from 'lucide-react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 
@@ -51,22 +51,14 @@ function App() {
             </p>
 
             <div className="inline-block bg-bright-red px-6 py-2 rounded-full">
-              <span className="font-bold text-base lg:text-lg tracking-wider">JANUARY</span>
+              <span className="font-bold text-base lg:text-lg tracking-wider">COMING SOON</span>
             </div>
 
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-4">
                 <Calendar className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-lg">Every Sunday</p>
-                  <p className="text-gray-300 text-base">January 4, 11, 18, 25</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <Clock className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-lg">10:00 AM – 1:00 PM</p>
+                  <p className="font-semibold text-lg">Date Coming Soon</p>
                 </div>
               </div>
 
@@ -202,37 +194,14 @@ function App() {
             </h2>
             <div className="w-24 h-1 bg-bright-red mx-auto"></div>
             <p className="text-gray-600 mt-6 text-xl">
-              All sessions: 10:00 AM – 1:00 PM at Exceed Learning Center
+              At Exceed Learning Center
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {/* Date 1 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">4</div>
-              <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Saturday</div>
-            </div>
-
-            {/* Date 2 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">11</div>
-              <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Saturday</div>
-            </div>
-
-            {/* Date 3 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">18</div>
-              <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Sunday</div>
-            </div>
-
-            {/* Date 4 */}
-            <div className="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-7xl font-black text-navy mb-2">25</div>
-              <div className="text-2xl font-bold text-gray-600">JANUARY</div>
-              <div className="text-base text-gray-500 mt-2">Saturday</div>
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white p-12 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
+              <div className="text-6xl lg:text-8xl font-black text-navy mb-4">COMING SOON</div>
+              <p className="text-xl text-gray-500">Dates will be announced shortly. Stay tuned!</p>
             </div>
           </div>
         </div>
