@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <div className="font-poppins">
       {/* HERO SECTION */}
-      <section className="min-h-screen bg-navy text-white py-16 px-6 lg:px-16 flex items-center">
+      <section className="min-h-screen bg-navy text-white pt-36 pb-16 px-6 lg:px-16 flex items-center">
         <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-3">
@@ -44,13 +44,21 @@ export default function Home() {
             <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
               4-week course helps you discover your ideal future and create a clear plan.
             </p>
-            <div className="inline-block bg-bright-red px-6 py-2 rounded-full">
-              <span className="font-bold text-base lg:text-lg tracking-wider">COMING SOON</span>
+            <div className="flex gap-3 flex-wrap">
+              <div className="inline-block bg-bright-red px-6 py-2 rounded-full">
+                <span className="font-bold text-base lg:text-lg tracking-wider">TEENS — JULY 2025</span>
+              </div>
+              <div className="inline-block bg-white/20 px-6 py-2 rounded-full">
+                <span className="font-bold text-base lg:text-lg tracking-wider">ADULTS — COMING SOON</span>
+              </div>
             </div>
             <div className="space-y-4 pt-4">
               <div className="flex items-start gap-4">
                 <Calendar className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
-                <p className="font-semibold text-lg">Date Coming Soon</p>
+                <div>
+                  <p className="font-bold text-lg">Teens: July 12, 19, 26 & Aug 2 — Sundays 10am–2pm</p>
+                  <p className="font-semibold text-lg text-gray-400">Adults: Coming Soon — November</p>
+                </div>
               </div>
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
@@ -77,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* WHAT YOU'LL LEARN */}
-      <section className="py-20 px-6 lg:px-16 bg-gray-50">
+      <section id="what-youll-learn" className="py-20 px-6 lg:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl lg:text-6xl font-black text-navy mb-4">WHAT YOU'LL LEARN</h2>
@@ -112,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* WHO THIS IS FOR */}
-      <section className="py-20 px-6 lg:px-16 bg-navy text-white">
+      <section id="who-this-is-for" className="py-20 px-6 lg:px-16 bg-navy text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl lg:text-6xl font-black mb-4">WHO THIS IS FOR</h2>
@@ -143,24 +151,40 @@ export default function Home() {
       </section>
 
       {/* EVENT SCHEDULE */}
-      <section className="py-20 px-6 lg:px-16 bg-gray-50">
+      <section id="schedule" className="py-20 px-6 lg:px-16 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-5xl lg:text-6xl font-black text-navy mb-4">EVENT SCHEDULE</h2>
             <div className="w-24 h-1 bg-bright-red mx-auto"></div>
             <p className="text-gray-600 mt-6 text-xl">At Exceed Learning Center</p>
           </div>
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-white p-12 rounded-2xl shadow-lg border-t-4 border-bright-red text-center">
-              <div className="text-6xl lg:text-8xl font-black text-navy mb-4">COMING SOON</div>
-              <p className="text-xl text-gray-500">Dates will be announced shortly. Stay tuned!</p>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+            {/* Teens */}
+            <div className="bg-white p-10 rounded-2xl shadow-lg border-t-4 border-bright-red">
+              <h3 className="text-3xl font-black text-navy mb-2">TEENS</h3>
+              <p className="text-soft-red font-semibold text-lg mb-6">Sundays · 10:00am – 2:00pm</p>
+              <ul className="space-y-3">
+                {['July 12', 'July 19', 'July 26', 'August 2'].map((date) => (
+                  <li key={date} className="flex items-center gap-3">
+                    <Calendar className="w-5 h-5 text-bright-red flex-shrink-0" />
+                    <span className="text-xl font-semibold text-navy">{date}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Adults */}
+            <div className="bg-white p-10 rounded-2xl shadow-lg border-t-4 border-navy text-center flex flex-col items-center justify-center">
+              <h3 className="text-3xl font-black text-navy mb-4">ADULTS</h3>
+              <div className="text-5xl font-black text-navy mb-2">COMING SOON</div>
+              <p className="text-soft-red font-semibold text-xl">November 2025</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* PRICE + CTA */}
-      <section className="py-20 px-6 lg:px-16 bg-navy text-white">
+      <section id="pricing" className="py-20 px-6 lg:px-16 bg-navy text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl lg:text-6xl font-black mb-8">INVEST IN YOUR FUTURE</h2>
           <div className="bg-white/10 backdrop-blur-sm p-12 rounded-3xl border border-white/20 mb-8">
