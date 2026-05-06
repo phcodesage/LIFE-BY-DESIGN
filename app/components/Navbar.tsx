@@ -35,7 +35,8 @@ export default function Navbar() {
             alt="Exceed Learning Center"
             width={160}
             height={48}
-            className="h-12 w-auto object-contain"
+            className="h-12 object-contain"
+            style={{ width: 'auto' }}
             priority
           />
         </a>

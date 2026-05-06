@@ -49,7 +49,7 @@ export default function Home() {
                 <span className="font-bold text-base lg:text-lg tracking-wider">TEENS — JULY 2025</span>
               </div>
               <div className="inline-block bg-white/20 px-6 py-2 rounded-full">
-                <span className="font-bold text-base lg:text-lg tracking-wider">ADULTS — COMING SOON</span>
+                <span className="font-bold text-base lg:text-lg tracking-wider">ADULTS — NOV 4 WEDNESDAYS</span>
               </div>
             </div>
             <div className="space-y-4 pt-4">
@@ -57,7 +57,7 @@ export default function Home() {
                 <Calendar className="w-6 h-6 text-soft-red flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-bold text-lg">Teens: July 12, 19, 26 & Aug 2 — Sundays 10am–2pm</p>
-                  <p className="font-semibold text-lg text-gray-400">Adults: Coming Soon — November</p>
+                  <p className="font-semibold text-lg text-gray-400">Adults: Nov 4, Wednesdays · 6–8PM · 8 Weeks · $749</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <div className="pt-6">
               <button className="bg-bright-red hover:bg-soft-red text-white font-bold text-xl px-10 py-5 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all">
-                REGISTER NOW – $749
+                COMPLETE TRANSFORMATION PROGRAM
               </button>
             </div>
           </div>
@@ -77,6 +77,7 @@ export default function Home() {
               src="/images/hero.png"
               alt="Confident professional"
               fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover rounded-2xl shadow-2xl"
               priority
             />
@@ -174,10 +175,20 @@ export default function Home() {
             </div>
 
             {/* Adults */}
-            <div className="bg-white p-10 rounded-2xl shadow-lg border-t-4 border-navy text-center flex flex-col items-center justify-center">
-              <h3 className="text-3xl font-black text-navy mb-4">ADULTS</h3>
-              <div className="text-5xl font-black text-navy mb-2">COMING SOON</div>
-              <p className="text-soft-red font-semibold text-xl">November 2025</p>
+            <div className="bg-white p-10 rounded-2xl shadow-lg border-t-4 border-bright-red">
+              <h3 className="text-3xl font-black text-navy mb-2">ADULTS</h3>
+              <p className="text-soft-red font-semibold text-lg mb-6">Wednesdays · 6:00 – 8:00PM</p>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center gap-3">
+                  <Calendar className="w-5 h-5 text-bright-red flex-shrink-0" />
+                  <span className="text-xl font-semibold text-navy">Starting Nov 4</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <Calendar className="w-5 h-5 text-bright-red flex-shrink-0" />
+                  <span className="text-xl font-semibold text-navy">8 Weeks</span>
+                </li>
+              </ul>
+              <div className="text-4xl font-black text-bright-red">$749</div>
             </div>
           </div>
         </div>
@@ -191,7 +202,7 @@ export default function Home() {
             <div className="mb-6">
               <span className="text-7xl lg:text-9xl font-black text-soft-red">$749</span>
             </div>
-            <p className="text-2xl text-gray-300 mb-8">Complete 4-week transformation program</p>
+            <p className="text-2xl text-gray-300 mb-8">Complete 8-week transformation program</p>
             <button className="bg-bright-red hover:bg-soft-red text-white font-bold text-2xl px-14 py-6 rounded-xl shadow-2xl transform hover:scale-105 transition-all">
               RESERVE MY SPOT
             </button>
